@@ -1,0 +1,7 @@
+name: DeathPlugin
+version: ${project.version}
+main: me.redstoner2019.deathplugin.deathplugin.Main
+api-version: 1.17
+commands:
+  back:
+    description: "teleports you to your last death position"
