@@ -12,6 +12,7 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
+import java.math.BigDecimal;
 
 
 public final class Main extends JavaPlugin implements Listener {
@@ -42,7 +43,12 @@ public final class Main extends JavaPlugin implements Listener {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player){
             Player player = (Player) sender;
-            player.teleport(positions.get(player));
+            if(player.hasPermission("back.back") || player.isOp()){
+                player.teleport(positions.get(player));
+                player.sendMessage(ChatColor.GOLD + "You got teleported to your last death point!");
+            }else{
+                player.sendMessage(ChatColor.DARK_RED + "You don't have permission to use this command!");
+            }
         }
         return true;
     }
