@@ -43,10 +43,15 @@ public final class Main extends JavaPlugin implements Listener {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if(sender instanceof Player){
             Player player = (Player) sender;
-            if(player.hasPermission("back.back") || player.isOp()){
-                player.teleport(positions.get(player));
-                player.sendMessage(ChatColor.GOLD + "You got teleported to your last death point!");
-            }else{
+            if(player.hasPermission("back.back") || player.isOp()) {
+                if (positions.containsKey(player)) {
+                        player.teleport(positions.get(player));
+                        player.sendMessage(ChatColor.GOLD + "You got teleported to your last death point!");
+                        positions.remove(player);
+                    }else{
+                        player.sendMessage(ChatColor.DARK_RED + "You don't have a death position!");
+                    }
+                }else{
                 player.sendMessage(ChatColor.DARK_RED + "You don't have permission to use this command!");
             }
         }
