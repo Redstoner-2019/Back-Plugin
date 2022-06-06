@@ -1,5 +1,5 @@
 name: DeathPlugin
-version: ${project.version}
+version: 1.4.0
 main: me.redstoner2019.deathplugin.deathplugin.Main
 api-version: 1.17
 commands:
