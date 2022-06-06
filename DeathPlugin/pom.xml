@@ -6,7 +6,7 @@
 
     <groupId>me.Redstoner2019.DeathPlugin</groupId>
     <artifactId>DeathPlugin</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.4.0</version>
     <packaging>jar</packaging>
 
     <name>DeathPlugin</name>
@@ -23,8 +23,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
+                    <source>11</source>
+                    <target>11</target>
                 </configuration>
             </plugin>
             <plugin>
