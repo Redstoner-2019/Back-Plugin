@@ -1,5 +1,5 @@
 name: DeathPlugin
-version: 1.0-SNAPSHOT
+version: 1.4.0
 main: me.redstoner2019.deathplugin.deathplugin.Main
 api-version: 1.17
 commands:
