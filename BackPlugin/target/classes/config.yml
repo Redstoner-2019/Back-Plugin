@@ -1,0 +1,10 @@
+permissions-enabled: true
+permission: back.back
+teleport-support: true
+teleport-support-needs-permission: false
+teleport-support-permission: back.teleport
+teleport-minimum-distance: 50.0
+teleport-costs: false
+teleport-price: 100.0
+op-bypasses-cost: false
+max-positions-count: 10

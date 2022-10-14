@@ -1,0 +1,6 @@
+name: BackPlugin
+version: '1.5.1'
+main: me.redstoner2019.backplugin.Main
+api-version: 1.18
+commands:
+  back:

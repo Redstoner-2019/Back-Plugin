@@ -1,0 +1,16 @@
+messages:
+  death:
+    noPoint: '&cYou don''t have a last position!'
+    teleportToLastDeathLocation: '&5You got teleported to your last death point!'
+    onDeathMessages:
+      - '&6You died!'
+      - '&bYour last coordinates were: %x% %y% %z% '
+  teleport:
+    onTeleportMessages:
+      - '&6You teleported!'
+      - '&bYour last coordinates were: %x% %y% %z%'
+  fail:
+    noPermission: '&6You don''t have permission to use this command!'
+  economy:
+    withdrawn-on-teleport: '&6$%cost% was withdrawn for using this command!'
+    not-enough-money: '&6You don''t have enough money!'
